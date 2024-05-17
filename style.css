@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    background: #161a23;
+}
+
+h1{
+    font-size: 5rem;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+h1 span{
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+#time{
+    display: flex;
+}
+
+#time div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0 3rem;
+    padding: 0 1rem;
+    position: relative;
+}
+
+#time div span{
+    font-size: 1.5rem;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+#time div::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 5px;
+    background: var(--color);
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 10px var(--color),
+    0 0 20px var(--color);
+}
+
+.new-year{
+    -webkit-text-stroke: transparent;
+    color: brightness(180%) #df2b60;
+    text-shadow: 0 0 5px #df2b60;
+}
+
+#firework-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.firework{
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #fff;
+}
